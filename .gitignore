@@ -1,0 +1,16 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# private working files — real client/customer data never goes in the public repo
+private/
+**/*.local.md
+
+# build + python
+dist/
+__pycache__/
+*.pyc
+
+# os
+.DS_Store
