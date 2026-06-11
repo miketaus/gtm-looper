@@ -1,16 +1,15 @@
 # gtm-looper
 
-**Design loops, not prompts.** Open-source Claude skills and a publishing pipeline
-for founders who'd rather build the machine than crank the handle.
+**Design loops, not prompts.** Open-source Claude skills for founders who'd rather build
+the machine than crank the handle.
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 The most leveraged AI users stopped prompting one instruction at a time and started
 writing **loops** — small systems that judge their own work against a metric and keep
-going until it's good. This repo gives you two of those loops as installable skills,
-plus the pipeline that publishes content built with them.
+going until it's good. This repo gives you two of those loops as installable skills.
 
-📄 Start with the essay: [**Write Loops, Not Prompts**](posts/2026-06-11-write-loops-not-prompts.md)
+📄 Start with the essay: [**Write Loops, Not Prompts**](<your-blog-essay-url>)
 
 ---
 
@@ -42,7 +41,7 @@ cp -r gtm-looper/skills/persona-value ~/.claude/skills/
 Restart Claude Code and run `/skills` to confirm. Invoke directly with `/loop-design`.
 
 **Claude.ai / Desktop / Cowork:** upload the packaged `.skill` files via
-**Settings → Capabilities → Skills** (cut a release first with `scripts/repackage_skills.py`).
+**Settings → Capabilities → Skills**.
 
 To make Claude *consult these every session*, also paste the one-line pointer from
 [`patterns/loop-design-install-guide.md`](patterns/loop-design-install-guide.md) into
@@ -56,22 +55,7 @@ A prompt is a single ask you crank by hand. A loop is the machine that cranks th
 for you and judges its own output, so your job moves from executing tasks to designing
 the system. The keystroke work disappears; the judgment work — picking the objective,
 the metric, the boundary — is the part that compounds. Full argument in
-[the essay](posts/2026-06-11-write-loops-not-prompts.md).
-
----
-
-## Build your own publishing pipeline
-
-This repo is also a working content engine: author posts as markdown, publish to Ghost,
-amplify to social through a human-approval gate.
-
-- `scripts/publish_to_ghost.py` — push a repo markdown post to Ghost (draft by default,
-  idempotent by slug). Set creds in `.env` (see `.env.example`), then:
-  ```bash
-  python scripts/publish_to_ghost.py posts/your-post.md --dry-run
-  ```
-- [`BUILD_PLAN.md`](BUILD_PLAN.md) — the full rollout, phase by phase.
-- [`CLAUDE.md`](CLAUDE.md) — conventions and guardrails for working in this repo.
+[the essay](<your-blog-essay-url>).
 
 ---
 
