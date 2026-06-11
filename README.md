@@ -35,7 +35,7 @@ product scope. Built on the [Persona-Value Matrix](https://www.michaeltaus.com/p
 
 **Claude Code** (available in every project):
 ```bash
-git clone https://github.com/<your-username>/gtm-looper
+git clone https://github.com/miketaus/gtm-looper
 cp -r gtm-looper/skills/loop-design   ~/.claude/skills/
 cp -r gtm-looper/skills/persona-value ~/.claude/skills/
 ```
