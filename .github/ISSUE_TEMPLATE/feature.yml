@@ -1,0 +1,18 @@
+name: Feature
+description: Engineering feature/enhancement
+labels: ["type:feature"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+  - type: textarea
+    id: notes
+    attributes:
+      label: Technical notes
